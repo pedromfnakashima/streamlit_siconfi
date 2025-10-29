@@ -1,13 +1,13 @@
 {
-    "prevs_minimo": "5.321.859,89 reais (2025-12)",
-    "prevs_maximo": "5.699.104,48 reais (2026-07)",
-    "prevs_media": "5.456.444,78 reais",
-    "prevs_somaProx12meses": "65.477.337,38 reais",
-    "prevs_mediana": "5.420.979,63 reais",
-    "prevs_desvioPadrao": "125.083,32 reais",
-    "prevs_mediaUltimos12m": "6032357.61 reais",
-    "prevs_mediaPrevistaForaDaAmostra": "5456444.78 reais",
-    "prevs_crescimentoPercentualPrevisto": "-9.55%",
+    "prevs_minimo": "4.197.737,19 reais (2025-10)",
+    "prevs_maximo": "6.157.059,03 reais (2026-07)",
+    "prevs_media": "5.100.648,91 reais",
+    "prevs_soma": "61.207.786,86 reais",
+    "prevs_mediana": "4.974.714,36 reais",
+    "prevs_desvioPadrao": "702.236,37 reais",
+    "prevs_mediaUltimos12m": "6.032.357,61 reais",
+    "prevs_somaUltimos12m": "72.388.291,33 reais",
+    "prevs_crescimentoPercentualPrevisto": "-15.45%",
     "periodo_treinamento": "2014-03 a 2025-08 (138 meses)",
     "periodo_previsoes": "2025-09 a 2026-08 (12 meses)"
 }

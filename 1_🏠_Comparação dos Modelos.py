@@ -1,6 +1,4 @@
 import streamlit as st
-from pathlib import Path
-import socket
 import pandas as pd
 import json
 
@@ -22,11 +20,14 @@ int_indiceUf = li_UFs.index(str_uf)
 str_contaSigla = li_contas_siglas[int_indiceConta]
 str_ufExtenso = li_UFs_extenso[int_indiceUf]
 
-st.markdown("# Visão Geral dos Modelos")
+st.markdown("# Dashboard de previsões de variáveis fiscais dos Estados")
 
-st.markdown("Seleção:")
-st.markdown(f"- Estado: {str_ufExtenso}")
-st.markdown(f"- Conta: {str_conta}")
+st.markdown("## Comparação dos Modelos")
+
+# INFORMAÇÕES DE SELEÇÃO
+st.markdown("Seleção atual (painel à esquerda):")
+st.markdown(f"✅ Estado: {str_ufExtenso}")
+st.markdown(f"✅ Conta: {str_conta}")
 
 # EXIBE O PERÍODO DO DATASET
 strJson = f"./dados/Estados/{str_uf}_{str_contaSigla}_arima_previsoesForaSumario.json"
@@ -37,7 +38,7 @@ st.markdown(f"Dataset: {str_dataset}")
 
 
 # EXIBE TABELA COMPARATIVA DAS PREVISÕES
-st.markdown("## Tabela: Previsões dos modelos para 12 meses")
+st.markdown("### Tabela: Previsões dos modelos para 12 meses")
 st.write("")
 strCsv = f"./dados/Estados/{str_uf}_{str_contaSigla}_modelosPrevisoes.csv"
 df_previsoes = pd.read_csv(strCsv, sep=',', encoding='utf-8', header=0, index_col=0)
@@ -69,7 +70,7 @@ st.markdown(f"- ARIMA: {str_soma12mArima}")
 st.markdown(f"- Redes Neurais: {str_soma12mRN}")
 
 # EXIBE GRÁFICO COMPARATIVO COM OS VALORES DAS PREVISÕES
-st.markdown("## Gráfico: Comparativo das previsões dos modelos **Holt-Winters**, **ARIMA** e **Redes Neurais**.")
+st.markdown("### Gráfico: Comparativo das previsões dos modelos **Holt-Winters**, **ARIMA** e **Redes Neurais**.")
 strPng = f"./dados/Estados/{str_uf}_{str_contaSigla}_previsoesComparacoes.png"
 st.write("")
 st.image(strPng)
@@ -78,8 +79,9 @@ st.image(strPng)
 strCsv = f"./dados/Estados/{str_uf}_{str_contaSigla}_modelosMetricas.csv"
 df_metricas = pd.read_csv(strCsv, sep=',', encoding='utf-8', header=0, index_col=0)
 st.markdown("## Tabela: Comparativo de desempenho dos modelos **Holt-Winters**, **ARIMA** e **Redes Neurais**.")
-st.markdown(f"**Melhor modelo** (menor RMSE): {df_metricas.index[2]} (RMSE = {df_metricas.iloc[2,0]} reais)")
+st.markdown(f"**Melhor modelo** (menor RMSE): {df_metricas.index[0]} (RMSE = {df_metricas.iloc[0,0]} reais)")
 st.write("")
 st.write(df_metricas)
 
-st.sidebar.write("Desenvolvido por Pedro Nakashima")
+st.sidebar.markdown("Desenvolvido por:")
+st.sidebar.markdown("**Pedro Nakashima**")

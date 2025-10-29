@@ -1,10 +1,10 @@
 {
     "periodo_de_treinamento": "2014-03 a 2024-08 (126 meses)",
     "periodo_de_teste": "2024-09 a 2025-08 (12 meses)",
-    "erro_absoluto_medio": "34.714.373,82 reais",
-    "erro_absoluto_maximo": "124.210.754,06 reais (mês 2025-08)",
-    "erro_absoluto_minimo": "7.813.280,45 reais (mês 2024-10)",
-    "erro_percentual_medio": "4.53%",
-    "erro_percentual_maximo": "16.06% (mês 2025-08)",
-    "erro_percentual_minimo": "1.19% (mês 2024-10)"
+    "erro_absoluto_medio": "37.470.669,58 reais",
+    "erro_absoluto_maximo": "127.116.789,42 reais (mês 2025-08)",
+    "erro_absoluto_minimo": "10.583.600,59 reais (mês 2024-10)",
+    "erro_percentual_medio": "4.93%",
+    "erro_percentual_maximo": "16.44% (mês 2025-08)",
+    "erro_percentual_minimo": "1.61% (mês 2024-10)"
 }
