@@ -1,0 +1,13 @@
+{
+    "prevs_minimo": "275.692,18 reais (2026-04)",
+    "prevs_maximo": "363.110,63 reais (2026-06)",
+    "prevs_media": "308.477,50 reais",
+    "prevs_somaProx12meses": "3.701.730,00 reais",
+    "prevs_mediana": "296.553,46 reais",
+    "prevs_desvioPadrao": "25.606,37 reais",
+    "prevs_mediaUltimos12m": "269098.20 reais",
+    "prevs_mediaPrevistaForaDaAmostra": "308477.50 reais",
+    "prevs_crescimentoPercentualPrevisto": "+14.63%",
+    "periodo_treinamento": "2014-03 a 2025-08 (138 meses)",
+    "periodo_previsoes": "2025-09 a 2026-08 (12 meses)"
+}

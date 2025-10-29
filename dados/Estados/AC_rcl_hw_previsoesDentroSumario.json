@@ -1,0 +1,10 @@
+{
+    "periodo_de_treinamento": "2014-03 a 2024-08 (126 meses)",
+    "periodo_de_teste": "2024-09 a 2025-08 (12 meses)",
+    "erro_absoluto_medio": "-1.676.569,01 reais",
+    "erro_absoluto_maximo": "156.841.055,23 reais (mês 2025-05)",
+    "erro_absoluto_minimo": "9.733.866,49 reais (mês 2024-11)",
+    "erro_percentual_medio": "-1.17%",
+    "erro_percentual_maximo": "14.04% (mês 2025-05)",
+    "erro_percentual_minimo": "1.08% (mês 2024-11)"
+}

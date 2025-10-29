@@ -1,0 +1,4 @@
+Métrica,Valor,Valor_formatado
+RMSE (Root Mean Squared Error),43409000.4314327,"43.409.000,43"
+MAE (Mean Absolute Error),25034204.312735725,"25.034.204,31"
+MAPE (Mean Absolute % Error),8.297702739857545,"8,30"
